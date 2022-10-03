@@ -32,7 +32,7 @@ void loop() {
     if (digitalRead(switch_A_pin) != switch_A_state)
     {
       switch_A_state = !switch_A_state;
-      Joystick.setButton(1, switch_A_state);
+      Joystick.setButton(0, !switch_A_state);
     }
   }
 }
